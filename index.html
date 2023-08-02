@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><u>Student Enrollment Form</u></h1>
+        <form id="enrollmentForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="website">Website Link:</label>
+            <input type="url" id="website" required>
+
+            <label for="imageLink">Image Link:</label>
+            <input type="url" id="imageLink" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" required></textarea><br>
+
+            <button type="submit" id="enrollButton">Enroll Student</button><br>
+            <button type="button" id="clearButton">Clear Form</button>
+        </form>
+
+        <div id="displayData">
+            <!-- The enrolled student's data will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
